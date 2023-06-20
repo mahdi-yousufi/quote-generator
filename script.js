@@ -8,8 +8,6 @@ const loader = document.getElementById("loader");
 
 let apiQuotes = [];
 
-
-
 function loading() {
     loader.hidden = false
     quoteContainer.hidden = true
@@ -49,7 +47,7 @@ async function getQuotes() {
         apiQuotes = await response.json();
         newQuote()
     } catch (error) {
-        // alert('adsfa')
+        // alert(error.message)
     }
 }
 
