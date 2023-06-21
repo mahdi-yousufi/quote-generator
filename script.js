@@ -20,7 +20,7 @@ function compelet() {
 // show new quotes
 function newQuote() {
     loading()
-    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)]
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     if (!quote.author) {
         authorText.textContent = "unknown"
     } else {
